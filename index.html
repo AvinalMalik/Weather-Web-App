@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info Test</title>
+    <link rel="stylesheet" href="weather.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Search Section -->
+        <div id="searchSection">
+            <h1>Welcome to Weather Info Test</h1>
+            <div>
+                <label for="location">Enter a Location:</label><br>
+                <input type="text" id="location" name="location" placeholder="City name"><br>
+                <button id="getWeather">Get Weather</button>
+            </div>
+        </div>
+
+        <!-- Results Section (initially hidden) -->
+        <div id="resultsSection" style="display:none;">
+            <h1>Weather Results</h1>
+            <div id="weatherDetails">
+                <!-- Weather results will be displayed here -->
+                <canvas id="temperatureChart" width="400" height="400"></canvas>
+
+            </div>
+            <button id="newSearch">New Search</button>
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+    <script src="chartSetup.js"></script>
+</body>
+</html>

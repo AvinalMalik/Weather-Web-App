@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+.container {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 16px;
+    color: #555;
+}
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#weatherResult {
+    margin-top: 20px;
+    background-color: #eef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#temperatureChart {
+    width: 100%; /* Adjust as necessary */
+    height: 400px; /* Adjust as necessary */
+    display: block; /* Ensures the canvas is a block-level element */
+    margin: auto; /* Optional: Centers the canvas if within a flex container */
+}
