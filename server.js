@@ -10,7 +10,7 @@ const fetch = async (...args) => {
 
 app.get('/weather', async (req, res) => {
     console.log("Accessing /weather route");
-    const apiKey = '930227077b6885a44a0d9a8a82029cd9';
+    const apiKey = 'YOUR_API_KEY';
     const location = req.query.city || 'London';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
 
